@@ -1,8 +1,15 @@
+import React from "react"
+import { animated } from "react-spring"
+
 const SocialLinks = [
   {
     name: 'Instagram',
     handle: '@yourpopfilter',
     link: 'https://www.instagram.com/yourpopfilter/',
+    divs: [
+      ({ style }) => <animated.div style={{ ...style, background: 'lightpink' }}>Insta</animated.div>,
+      ({ style }) => <animated.div style={{ ...style, background: 'lightblue' }}>@yourpop</animated.div>,
+    ]
   },
   {
     name: 'Twitter',

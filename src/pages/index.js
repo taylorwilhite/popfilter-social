@@ -15,9 +15,11 @@ const IndexPage = () => (
       <div style={{ maxWidth: `300px`, margin: `auto` }}>
         <Image />
       </div>
-      {SocialLinks.map(link => 
-        <Social network={link} />  
-      )}
+      <div className="links-main">
+        {SocialLinks.map(link => 
+          <Social network={link} />  
+        )}
+      </div>
     </div>
 
   </Layout>

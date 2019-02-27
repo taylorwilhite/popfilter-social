@@ -1,22 +1,18 @@
-import React, { useState, useCallback } from "react"
-import { useTransition, animated } from 'react-spring'
+import React, { useState } from "react"
+import { useSpring, animated as a } from 'react-spring'
 
 
 const Social = ({ network }) => {
-  const [toggle, set] = useState(false)
-  const onHover = useCallback(() => set(state => !state))
-  const transitions = useTransition(toggle, null, {
-    from: { opacity: 0 },
-    enter: { opacity: 1 },
-    leave: { opacity: 0 },
+  const [flipped, set] = useState(false)
+  const { transform, opacity } = useSpring({
+    opacity: flipped ? 1 : 0,
+    transform: `perspective(600px) rotateX(${flipped ? 180 : 0}deg)`,
+    config: { mass: 5, tension: 500, friction: 80 },
   })
   return (
-    <div className="social-links" onMouseOver={onHover}>
-      {transitions.map(({ item, key, props }) => 
-        item
-          ? <animated.div key={key} style={props}>{ network.name }</animated.div>
-          : <animated.div key={key} style={props}>{ network.handle }</animated.div>
-  )}
+    <div className="social-links" onClick={() => set(state => !state)}>
+      <a.div class="c back" style={{ opacity: opacity.interpolate(o => 1 - o), transform }}>{network.name}</a.div>
+      <a.div class="c front" style={{ opacity, transform: transform.interpolate(t => `${t} rotateX(180deg)`) }}>{network.handle}</a.div>
     </div>
   )
 };
