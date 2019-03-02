@@ -10,9 +10,9 @@ const Social = ({ network }) => {
     config: { mass: 5, tension: 500, friction: 80 },
   })
   return (
-    <div className="social-links" onClick={() => set(state => !state)}>
-      <a.div class="c back" style={{ opacity: opacity.interpolate(o => 1 - o), transform }}>{network.name}</a.div>
-      <a.div class="c front" style={{ opacity, transform: transform.interpolate(t => `${t} rotateX(180deg)`) }}>{network.handle}</a.div>
+    <div className="social-links" onMouseEnter={() => set(state => !state)} onMouseLeave={() => set(state => !state)}>
+      <a.div class="c back" style={{ opacity: opacity.interpolate(o => 1 - o), transform }}><p>{network.name}</p></a.div>
+      <a.div class={"c front-" + network.name} style={{ opacity, transform: transform.interpolate(t => `${t} rotateX(180deg)`) }}><a class="c social-anchor" href={network.link}><p>{network.handle}</p></a></a.div>
     </div>
   )
 };
