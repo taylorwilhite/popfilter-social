@@ -643,7 +643,7 @@ pre tt:after {
 }
 
 .main-content {
-  width: 80vw;
+  width: 80%;
   text-align: center;
   border-radius: 10px;
   margin: auto;
@@ -682,8 +682,10 @@ pre tt:after {
   border-radius: 10px;
   font-family: 'Streamster', sans-serif;
 }
-.back {
-  /* background: #45A29E; */
+.back p{
+  -webkit-text-fill-color: transparent;
+  padding: 10px;
+  transform: translateY(-10px);
 }
 .social-anchor {
   text-decoration: none;
@@ -720,14 +722,48 @@ pre tt:after {
 }
 .front-Patreon {
   background:linear-gradient(120deg, #f96854, #052d49);
+  background:-webkit-linear-gradient(120deg, #f96854, #052d49);
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
 }
 .front-SHHH {
   background: -webkit-linear-gradient(to right, #68DFFF, #D51D1F);
   background: linear-gradient(to right, #68DFFF, #D51D1F);
-  background-clip: text;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+.SHHH p {
+  background: -webkit-linear-gradient(to right, #68DFFF, #D51D1F);
+  background: linear-gradient(to right, #68DFFF, #D51D1F);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+}
+.front-MOTY {
+  background: -webkit-linear-gradient(120deg, #8A1A12, #cc271b, #FFFFFF);
+  background: linear-gradient(120deg, #8A1A12, #cc271b, #FFFFFF);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+.MOTY p {
+  background: -webkit-linear-gradient(120deg, #8A1A12, #cc271b, #FFFFFF);
+  background: linear-gradient(120deg, #8A1A12, #cc271b, #FFFFFF);
+  -webkit-background-clip: text;
+}
+.front-OCD {
+  background: -webkit-linear-gradient(to bottom, #F9E355, #D93A78, #5F348C);
+  background: linear-gradient(to bottom, #F9E355, #D93A78, #5F348C);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+.OCD p {
+  background: -webkit-linear-gradient(to bottom, #F9E355, #D93A78, #5F348C);
+  background: linear-gradient(to bottom, #F9E355, #D93A78, #5F348C);
+  -webkit-background-clip: text;
+}
+.front-TTT {
+  background: -webkit-linear-gradient(120deg, #356565, #A58546);
+  background: linear-gradient(120deg, #356565, #A58546);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+.TTT p {
+  background: -webkit-linear-gradient(to bottom, #356565, #A58546, #9E413D);
+  background: linear-gradient(to bottom, #356565, #A58546, #9E413D);
+  -webkit-background-clip: text;
 }
 .fab, .fas {
   font-size: 72px;
@@ -735,8 +771,49 @@ pre tt:after {
 
 .pagetitle {
   font-family: 'League Gothic', sans-serif;
-  font-size: 128px;
+  font-size: 48px;
   color: #7895A4;
   text-align: center;
   letter-spacing: 10px;
+}
+@media screen and (max-width: 500px) {
+  .pagetitle {
+    font-size: 48px;
+    letter-spacing: 4px;
+  }
+  .fab, .fas {
+    font-size: 48px;
+  }
+  .fas {
+    transform: translateY(30px);
+  }
+  .MOTY p{
+    transform: translateY(10px);
+  }
+  .SHHH p{
+    transform: translateY(10px);
+  }
+  .TTT p{
+    transform: translateY(10px);
+  }
+  .OCD p{
+    transform: translateY(10px);
+  }
+  .social-links {
+    min-width: 100px;
+    font-size: 1em;
+    height: 100px;
+  }
+}
+
+@media screen and (min-width: 570px) {
+  .pagetitle {
+    font-size: 72px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .pagetitle {
+    font-size: 128px;
+  }
 }
