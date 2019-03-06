@@ -212,6 +212,7 @@ html {
 }
 * {
   box-sizing: inherit;
+  background-attachment: scroll;
 }
 *:before {
   box-sizing: inherit;
