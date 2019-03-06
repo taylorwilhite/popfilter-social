@@ -647,6 +647,7 @@ pre tt:after {
   text-align: center;
   border-radius: 10px;
   margin: auto;
+  margin-bottom: 30px;
 }
 
 .social-links {
@@ -700,24 +701,25 @@ pre tt:after {
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
 }
 .front-Twitter {
-  background: -moz-linear-gradient(to top, #00aced, #0081ce);
-	background: linear-gradient(to top, #00aced, #0081ce);
-  background: -webkit-linear-gradient(to top, #00aced, #0081ce);
-  border: none;
+  background: -moz-linear-gradient(45deg, #00ACEE, #36D8FF, #f5f8fa);
+	background:linear-gradient(45deg, #00ACEE, #36D8FF, #f5f8fa);
+  background: -webkit-linear-gradient(45deg, #00ACEE, #36D8FF, #f5f8fa);
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
 }
 .front-Facebook {
-  background: -moz-linear-gradient(to top, #3b5998, #2b4170);
-	background: linear-gradient(to top, #3b5998, #2b4170);
-  background: -webkit-linear-gradient(to top, #3b5998, #2b4170);
-  border: none;
+  background: -moz-linear-gradient(120deg, #FFFFFF, #3b5998);
+	background:linear-gradient(120deg, #FFFFFF, #3b5998);
+  background: -webkit-linear-gradient(120deg, #FFFFFF, #3b5998);
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
 }
 .front-Youtube {
 	background: #ED213A;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to bottom, #93291E, #ED213A);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to bottom, #93291E, #ED213A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  border: none;
+  background: -webkit-linear-gradient(120deg, #ff0000, #282828);  /* Chrome 10-25, Safari 5.1-6 */
+  background:linear-gradient(120deg, #ff0000, #282828);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+.front-Patreon {
+  background:linear-gradient(120deg, #f96854, #052d49);
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
 }
 .fab {
