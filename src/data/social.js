@@ -1,6 +1,3 @@
-import React from "react"
-import { animated } from "react-spring"
-
 const SocialLinks = [
   {
     name: 'Instagram',

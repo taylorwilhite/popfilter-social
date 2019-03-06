@@ -674,7 +674,7 @@ pre tt:after {
 .c {
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -777,6 +777,11 @@ pre tt:after {
   letter-spacing: 10px;
 }
 @media screen and (max-width: 500px) {
+  .links-main {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+  }
   .c {
     -webkit-background-attachment: scroll;
     -moz-background-attachment: scroll;
@@ -787,6 +792,8 @@ pre tt:after {
     -moz-background-size: contain;
     -o-background-size: contain;
     background-size: contain;
+    transform: none !important;
+    height: 100px;
   }
   .pagetitle {
     font-size: 48px;
@@ -797,6 +804,13 @@ pre tt:after {
   }
   .fas {
     transform: translateY(30px);
+  }
+  .back {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+  .front-Facebook, .front-Instagram, .front-MOTY, .front-OCD, .front-Patreon, .front-SHHH, .front-SHHH, .front-TTT, .front-Twitter, .front-Youtube {
+    display: none !important;
   }
   .MOTY p{
     transform: translateY(10px);
@@ -811,9 +825,12 @@ pre tt:after {
     transform: translateY(10px);
   }
   .social-links {
-    min-width: 100px;
+    display: block;
+    min-width: 200px;
+    max-width: 200px;
     font-size: 1em;
-    height: 100px;
+    max-height: 100px;
+    margin: auto;
   }
 }
 
