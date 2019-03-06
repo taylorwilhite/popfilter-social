@@ -32,6 +32,34 @@ const SocialLinks = [
     link: 'https://www.patreon.com/yourpopfilter/',
     icon: 'fab fa-patreon',
   },
+  {
+    podcast: true,
+    name: 'SHHH',
+    handle: 'Super Hero Hour Hour',
+    link: 'http://hyperurl.co/shhh',
+    icon: 'fas fa-podcast',
+  },
+  {
+    podcast: true,
+    name: 'MOTY',
+    handle: 'Movie Of The Year',
+    link: 'http://hyperurl.co/moty',
+    icon: 'fas fa-podcast',
+  },
+  {
+    podcast: true,
+    name: 'OCD',
+    handle: 'The OC Disorder',
+    link: 'http://hyperurl.co/theocd',
+    icon: 'fas fa-podcast',
+  },
+  {
+    podcast: true,
+    name: 'TTT',
+    handle: 'Taylor Talking Taylor',
+    link: 'http://hyperurl.co/tttpod',
+    icon: 'fas fa-podcast',
+  },
 ]
 
 export default SocialLinks;

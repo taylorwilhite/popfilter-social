@@ -722,7 +722,14 @@ pre tt:after {
   background:linear-gradient(120deg, #f96854, #052d49);
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
 }
-.fab {
+.front-SHHH {
+  background: -webkit-linear-gradient(to right, #68DFFF, #D51D1F);
+  background: linear-gradient(to right, #68DFFF, #D51D1F);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.fab, .fas {
   font-size: 72px;
 }
 
