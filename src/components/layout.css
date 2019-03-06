@@ -212,7 +212,6 @@ html {
 }
 * {
   box-sizing: inherit;
-  background-attachment: scroll;
 }
 *:before {
   box-sizing: inherit;
@@ -735,7 +734,6 @@ pre tt:after {
   background: -webkit-linear-gradient(to right, #68DFFF, #D51D1F);
   background: linear-gradient(to right, #68DFFF, #D51D1F);
   -webkit-background-clip: text;
-  background-attachment: scroll;
 }
 .front-MOTY {
   background: -webkit-linear-gradient(120deg, #8A1A12, #cc271b, #FFFFFF);
@@ -746,7 +744,6 @@ pre tt:after {
   background: -webkit-linear-gradient(120deg, #8A1A12, #cc271b, #FFFFFF);
   background: linear-gradient(120deg, #8A1A12, #cc271b, #FFFFFF);
   -webkit-background-clip: text;
-  background-attachment: scroll;
 }
 .front-OCD {
   background: -webkit-linear-gradient(to bottom, #F9E355, #D93A78, #5F348C);
@@ -757,7 +754,6 @@ pre tt:after {
   background: -webkit-linear-gradient(to bottom, #F9E355, #D93A78, #5F348C);
   background: linear-gradient(to bottom, #F9E355, #D93A78, #5F348C);
   -webkit-background-clip: text;
-  background-attachment: scroll;
 }
 .front-TTT {
   background: -webkit-linear-gradient(120deg, #356565, #A58546);
@@ -768,7 +764,6 @@ pre tt:after {
   background: -webkit-linear-gradient(to bottom, #356565, #A58546, #9E413D);
   background: linear-gradient(to bottom, #356565, #A58546, #9E413D);
   -webkit-background-clip: text;
-  background-attachment: scroll;
 }
 .fab, .fas {
   font-size: 72px;
@@ -782,6 +777,17 @@ pre tt:after {
   letter-spacing: 10px;
 }
 @media screen and (max-width: 500px) {
+  .c {
+    -webkit-background-attachment: scroll;
+    -moz-background-attachment: scroll;
+    -o-background-attachment: scroll;
+    -ms-backgroudn-attachment: scroll;
+    background-attachment: scroll;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+  }
   .pagetitle {
     font-size: 48px;
     letter-spacing: 4px;
