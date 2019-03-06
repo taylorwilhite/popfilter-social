@@ -11,7 +11,7 @@ const Social = ({ network }) => {
   })
   return (
     <div className="social-links" onMouseEnter={() => set(state => !state)} onMouseLeave={() => set(state => !state)}>
-      <a.div class="c back" style={{ opacity: opacity.interpolate(o => 1 - o), transform }}><p>{network.name}</p></a.div>
+      <a.div class="c back" style={{ opacity: opacity.interpolate(o => 1 - o), transform }}><i className={network.icon}></i></a.div>
       <a.div class={"c front-" + network.name} style={{ opacity, transform: transform.interpolate(t => `${t} rotateX(180deg)`) }}><a class="c social-anchor" href={network.link}><p>{network.handle}</p></a></a.div>
     </div>
   )

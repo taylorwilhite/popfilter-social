@@ -11,10 +11,10 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
     <div className="main-content">
-      <h1 className="pagetitle">Yourpopfilter links</h1>
-      <div style={{ maxWidth: `300px`, margin: `auto` }}>
+      <div style={{ maxWidth: `300px`, margin: `20px auto` }}>
         <Image />
       </div>
+      <a href="https://www.yourpopfilter.com" target="blank"><h1 className="pagetitle">YOURPOPFILTER</h1></a>
       <div className="links-main">
         {SocialLinks.map(link => 
           <Social network={link} />  

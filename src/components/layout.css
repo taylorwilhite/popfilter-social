@@ -1,3 +1,22 @@
+/* fonts */
+
+@font-face {
+  font-family: "Summit Display";
+  src: url("../fonts/SummitMedium-Display.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "League Gothic";
+  src: url("../fonts/leaguegothic-regular-webfont.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Streamster";
+  src: url("../fonts/Streamster.ttf") format("truetype");
+}
+
+/* /fonts */
+
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -7,7 +26,7 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: palegoldenrod;
+  background-color: #1c2321;
 }
 article,
 aside,
@@ -43,6 +62,7 @@ template {
 a {
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
+  text-decoration: none;
 }
 a:active,
 a:hover {
@@ -624,25 +644,23 @@ pre tt:after {
 
 .main-content {
   width: 80vw;
-  background-color: #444;
-  height: 95vh;
   text-align: center;
   border-radius: 10px;
-  margin: 10px auto;
-  box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.3);
+  margin: auto;
 }
 
 .social-links {
   max-width: 30%;
   border-radius: 10px;
+  min-width: 200px;
   width: 23%;
   height: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: #eef1ef;
   font-weight: 800;
-  font-size: 1em;
+  font-size: 2em;
   will-change: transform, opacity;
   text-shadow: 0px 2px 40px #00000020, 0px 2px 5px #00000030;
 }
@@ -661,40 +679,55 @@ pre tt:after {
   justify-content: center;
   align-content: center;
   border-radius: 10px;
-  /* border: 1px solid rgba(102, 153, 204, 0.6); */
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  font-family: 'Streamster', sans-serif;
 }
 .back {
-  background: #555;
+  /* background: #45A29E; */
 }
 .social-anchor {
   text-decoration: none;
   border: none;
+  color: #eef1ef;
 }
 .social-anchor:visited {
-  color: white;
+  color: #eef1ef;
 }
 .front-Instagram {
   background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
   background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
   background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
   border: none;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
 }
 .front-Twitter {
-  background: -moz-linear-gradient(top, #00aced, #0081ce);
-	background: linear-gradient(top, #00aced, #0081ce);
-  background: -webkit-linear-gradient(top, #00aced, #0081ce);
+  background: -moz-linear-gradient(to top, #00aced, #0081ce);
+	background: linear-gradient(to top, #00aced, #0081ce);
+  background: -webkit-linear-gradient(to top, #00aced, #0081ce);
   border: none;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
 }
 .front-Facebook {
-  background: -moz-linear-gradient(top, #3b5998, #2b4170);
-	background: linear-gradient(top, #3b5998, #2b4170);
-  background: -webkit-linear-gradient(top, #3b5998, #2b4170);
+  background: -moz-linear-gradient(to top, #3b5998, #2b4170);
+	background: linear-gradient(to top, #3b5998, #2b4170);
+  background: -webkit-linear-gradient(to top, #3b5998, #2b4170);
   border: none;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
 }
 .front-Youtube {
 	background: #ED213A;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to bottom, #93291E, #ED213A);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to bottom, #93291E, #ED213A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   border: none;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+.fab {
+  font-size: 72px;
+}
+
+.pagetitle {
+  font-family: 'League Gothic', sans-serif;
+  font-size: 128px;
+  color: #7895A4;
+  text-align: center;
+  letter-spacing: 10px;
 }
